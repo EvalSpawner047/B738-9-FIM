@@ -1,0 +1,197 @@
+<html lang="en">
+   
+   <!--
+PDF Technical Publication (PTP)
+For more details about PTP publications see the "readme.txt" document delivered with each PTP ZIP archive.
+Metadata embedded in this HTML document is subject to change at the sole discretion of The Boeing Company.
+Copyright © 2013-2026, The Boeing Company.
+-->
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Fault Isolation Manual</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="application/ld+json">{
+"@context":{ "@vocab":"http://docs.web.boeing.com/ns/ptp/vocab/1.0/"},
+"@type":"PdfTechPub",
+"modified":"2026-05-28T12:10:20Z",
+"supplementLink":"file:///C:/PDF/TBC/FIM/D633A103-OMR",
+"identifier":"D633A103-OMR",
+"issued":"2026-06-15T07:00:00Z",
+"title":"Fault Isolation Manual",
+"applicabilityLabel":"737-700/800/900",
+"issueLevel":"90",
+"customizedFor":"OMR",
+"exportControlStatement":["\n NON-TECHNICAL / ADMINISTRATIVE DATA ONLY. NOT SUBJECT TO EAR OR ITAR EXPORT REGULATIONS.\n","\n EXPORT CONTROLLED - THIS TECHNOLOGY OR SOFTWARE IS SUBJECT TO THE U.S. EXPORT ADMINISTRATION REGULATIONS (EAR), (15 C.F.R. PARTS 730-774). NO AUTHORIZATION FROM THE U.S. DEPARTMENT OF COMMERCE IS REQUIRED FOR EXPORT, RE-EXPORT, IN-COUNTRY TRANSFER, OR ACCESS EXCEPT TO COUNTRY GROUP E:1 OR E:2 COUNTRIES/PERSONS PER SUPP.1 TO PART 740 OF THE EAR.\n"],
+"rightsHolderCage":"81205",
+"rightsHolderName":"The Boeing Company",
+"rightsStatement":"BOEING PROPRIETARY",
+"applicableAirplaneRange":["YC171-YC171","YB551-YB551","YJ956-YJ956","YJ904-YJ904","YJ910-YJ910","YF112-YF112","YF113-YF113","YF114-YF114","YH751-YH751","YT177-YT177","YT178-YT178","YT180-YT180","YH752-YH752","YT181-YT181","YH753-YH753","YH754-YH754","YH755-YH755","YT182-YT182","YT183-YT183","YT184-YT184","YT185-YT185","YW916-YW916","YW917-YW917","YW918-YW918"],
+"applicableAirplaneIdType":"variableEffectivity",
+"assignedSubject":["27-81-00","27-21-00","27-51-00","27-41-00","27-59-00","27-62-00","27-31-00","27-32-00","27-83-00","27-61-00","27-11-00","27-88-00","28-41-00","28-22-00","28-25-00","28-21-00","28-43-00","29-30-00","29-11-00","29-10-00","29-20-00","30-31-00","30-41-00","30-21-00","30-11-00","30-71-00","30-42-00","31-62-00","31-51-00","31-63-00","31-98-00","31-31-00","31-25-00","31-52-00","31-33-00","32-51-00","32-71-00","32-42-00","32-61-00","32-62-00","32-30-00","32-21-00","32-09-00","32-44-00","32-11-00","32-32-00","33-10-00","33-44-00","33-40-00","33-20-00","33-30-00","33-35-00","33-50-00","34-58-00","34-53-00","34-21-00","34-20-00","34-55-00","34-31-00","34-45-00","34-16-00","34-43-00","34-51-00","34-57-00","34-22-00","34-23-00","34-61-00","34-13-00","34-32-00","34-24-00","34-46-00","34-33-00","35-12-00","35-99-00","35-22-00","36-10-00","38-30-00","38-10-00","46-13-00","47-31-00","49-55-00","49-60-00","49-54-00","49-32-00","49-70-00","49-40-00","49-31-00","49-10-00","49-33-00","49-15-00","49-20-00","49-53-00","49-90-00","49-75-00","49-51-00","49-95-00","49-45-00","49-50-00","49-30-00","49-65-00","49-52-00","52-40-00","52-10-00","52-30-00","52-99-00","52-20-00","52-32-00","52-50-00","56-21-00","56-11-00","F71-05-00","F71-06-00","F73-00-00","F73-31-00","F73-27-00","F73-28-00","F73-07-00","F73-22-00","F73-06-00","F73-26-00","F73-05-00","F73-21-00","F73-11-00","F73-25-00","F73-23-00","F73-24-00","F74-21-00","F75-22-00","F75-34-00","F75-21-00","F75-33-00","F75-23-00","F75-31-00","F75-32-00","05-51-00","F76-05-00","F76-11-00","F77-05-00","F77-21-00","F77-11-00","F77-31-00","F78-36-00","F78-31-00","F78-32-00","F78-34-00","F79-21-00","F79-05-00","F80-06-00","F80-07-00","F80-05-00","21-53-00","21-75-00","21-61-00","21-23-00","21-00-00","21-62-00","21-52-00","21-22-00","21-45-00","21-31-00","21-25-00","21-33-00","21-51-00","21-27-00","22-17-00","22-15-00","22-11-00","22-16-00","22-32-00","22-23-00","22-14-00","22-31-00","22-13-00","22-12-00","23-32-00","23-75-00","23-27-00","23-51-00","23-12-00","23-11-00","23-24-00","23-82-00","23-31-00","23-42-00","23-71-00","23-28-00","23-34-00","23-41-00","23-43-00","24-34-00","24-31-00","24-21-00","24-41-00","24-11-00","25-40-00","25-31-00","25-21-00","25-99-00","25-24-00","25-22-00","25-61-00","25-23-00","26-23-00","26-20-00","26-99-00","26-18-00","26-14-00","26-10-00","26-16-00"],
+"ptpJsonLdVersion":"1.0"
+}</script><style>
+					:root {
+					--boeing-blue: #0033A1; --highlight-blue: #009BDF;
+					--border-color: #373a3c; --gray-accent: #f2f2f2;
+					font-size:14px; line-height: 1.2;		
+					}
+					
+					/* LAYOUT */
+					body {
+					font-family: 'Arial Unicode MS', Arial, HelveticaNeueLt, sans-serif;
+					color: black; background: white;
+					max-width: 650px; min-height: 100vh;
+					padding: 1em 2em; margin:0;
+					display: flex; flex-direction: column;
+					}
+					header, main { margin: 1em 0; padding:0; min-height: 50px; }
+					footer { 
+					border-top: 2px solid var(--gray-accent);
+					font-size:x-small;
+					padding: 1em;
+					margin-top:auto; 
+					}
+					
+					/* DETAIL FOLDS */ 
+					details summary {
+					background-color: var(--gray-accent); 
+					font-weight: bold;
+					list-style: none;
+					padding:.35em .5em;
+					border: 1px solid var(--border-color);
+					}
+					.exportControl { border: 1px solid var(--border-color);  }
+					summary::-webkit-details-marker { display: none; }
+					details summary::before { content: ' ⏵ '; color: var(--boeing-blue); }
+					details[open] summary::before { content:" ⏷ "; color: var(--boeing-blue); }
+					.exportRegistrationStatement { border-left: 3px solid var(--boeing-blue); padding-left: 1em; margin:1em; }
+					
+					/* TABLES */
+					tr { border-left: 1px solid var(--border-color); }
+					th {
+					text-align: right;
+					white-space: nowrap;
+					font-weight: bold;
+					width: 1%;	
+					border-left: 1px solid var(--border-color);
+					border-right: 1px solid lightgrey;
+					}
+					td, th { vertical-align: top; padding:.25em .5em; }
+					tr + tr {border-top:1px solid lightgrey;}					
+					table {border: 1px solid var(--border-color); border-collapse: collapse; }
+					/* HEADERS */
+					h1 {color:var(--boeing-blue); font-size:1.6rem; margin: .25em 0; }
+					h2 {color: var(--boeing-blue); font-size: 1.3rem; margin: .5em 0; }
+					h3 {color: black; font-size: 1rem; margin: .5em 0; }	
+					h4 { color: var(--highlight-blue); margin: 0; }
+					
+					/* TOC LISTS */
+					ul { list-style-type: none; padding:0;}
+					ul ul{ padding-left: 1em; }
+					li { line-height: 1.5; }
+					.tocHead { padding-top:0.65rem; font-weight: bold; }
+					
+					/* ETC */
+					.codeList { margin-left: 5px; }
+					.separator { color: var(--boeing-blue); margin: 0 5px; } 
+					.hide { display: none; }
+				</style></head>
+   <body>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="155px" height="35.4" viewBox="0 0 212.02061 48.429806" preserveAspectRatio="xMinYMin meet">
+         <defs><style type="text/css">.s1 {fill:#0039a6;fill-opacity:1;fill-rule:nonzero;stroke:none;}</style></defs>
+         <g transform="translate(-15.41826,-83.861614)">
+            <path class="s1" d="m 47.67951,113.27999 c 1.013125,-2.16788 1.575625,-4.58738 1.575625,-7.13575 0,-5.88125 -3.0015,-11.062001 -7.557125,-14.094251 2.713375,-2.792875 5.650375,-5.55175 8.777875,-8.188375 -3.664625,2.15575 -7.107875,4.624 -10.289125,7.29 -2.346125,-1.2305 -5.0185,-1.931125 -7.8515,-1.931125 -9.34225,0 -16.917,7.5805 -16.917,16.923751 0,4.21825 1.544375,8.08062 4.099625,11.03962 -3.24225,7.00875 -3.808125,12.63863 -0.952125,14.54338 3.0575,2.03812 9.707,-1.65763 13.69725,-7.67813 0,0 -6.1705,5.56875 -9.561625,4.292 -2.086375,-0.79112 -2.09375,-3.982 -0.3735,-8.55712 2.80525,2.06 6.26225,3.27825 10.007375,3.27825 4.63625,0 8.833,-1.86225 11.890625,-4.87988 l 0.599625,1.12988 c 7.374,-0.59763 29.392,-1.18113 29.392,-1.18113 0,-1.05712 -14.577625,-0.0976 -26.538,-4.85112 z m -30.2295,-7.13575 c 0,-8.225001 6.662625,-14.887626 14.88525,-14.887626 2.204625,0 4.293,0.4785 6.179125,1.335375 -8.06875,7.131375 -14.316375,15.419501 -18.012625,22.582621 -1.914125,-2.50787 -3.05175,-5.63287 -3.05175,-9.03037 z m 14.88525,14.88475 c -3.478,0 -6.674875,-1.19138 -9.209,-3.18838 2.94675,-6.65337 8.952625,-15.57812 17.141125,-24.293996 4.180625,2.63675 6.958,7.292496 6.958,12.597626 0,2.26512 -0.51025,4.41312 -1.416,6.3375 -2.597625,-1.20363 -5.0195,-2.70763 -7.07525,-4.607 l 4.487375,8.42237 c -2.71875,2.91313 -6.588375,4.73188 -10.88625,4.73188"></path>
+            <g transform="translate(1.4285714,70)">
+               <path class="s1" d="m 147.19656,34.589114 2.75625,-3.662125 -9.6025,-0.0024 2.36625,-3.13725 9.60125,0 2.76375,-3.659625 -19.1725,0 -13.1875,17.501875 19.175,0 2.75375,-3.6645 -9.6,0 2.53875,-3.376 9.6075,0"></path>
+               <path class="s1" d="m 160.51156,24.127739 -13.18375,17.501875 9.56625,0 13.185,-17.501875 -9.5675,0"></path>
+               <path class="s1" d="m 192.38406,24.127739 -6.6825,8.872 -2.055,-8.872 -7.47625,0 -13.185,17.501875 6.3275,0 6.62625,-8.793375 2.03375,8.793375 7.55625,0 13.18875,-17.501875 -6.33375,0"></path>
+               <path class="s1" d="m 223.66656,24.127739 -15.37875,-0.0025 c -2.6325,0 -4.96625,1.25975 -6.44125,3.215375 l -7.93625,10.534125 c -0.2975,0.390625 -0.47125,0.878875 -0.47125,1.40875 0,1.293875 1.0475,2.346125 2.34125,2.346125 l 15.37625,0 c 2.63375,0 4.9725,-1.262125 6.445,-3.21525 l 1.90625,-2.528875 2.2225,0 2.775,-3.689 -11.77625,0 -3.71875,4.934125 c -0.38125,0.50775 -0.98875,0.8345 -1.67,0.8345 l -2.7075,0 c -0.34125,0 -0.6125,-0.2735 -0.6125,-0.609875 0,-0.139125 0.0463,-0.266125 0.12375,-0.36375 l 6.30625,-8.371625 c 0.38125,-0.50775 0.98625,-0.8325 1.67,-0.8325 l 2.71,0 c 0.34,0 0.61,0.273375 0.61,0.607875 0,0.13425 -0.0488,0.26375 -0.12375,0.368625 l -1.02375,1.359875 9.55625,0 1.6925,-2.246 c 0.2925,-0.38825 0.46875,-0.874125 0.46875,-1.40625 0,-1.294 -1.0525,-2.34375 -2.34375,-2.34375"></path>
+               <path class="s1" d="m 128.06531,26.471489 c 0,-1.294 -1.0475,-2.34375 -2.34375,-2.34375 l -15.36875,0 c -2.63375,0 -4.97,1.25725 -6.44562,3.212875 l -7.939501,10.534125 c -0.295375,0.393125 -0.46875,0.878875 -0.46875,1.40875 0,1.293875 1.047375,2.346125 2.341375,2.346125 l 15.371246,0 c 2.6375,0 4.97625,-1.262125 6.4475,-3.21525 l 7.9375,-10.53425 c 0.295,-0.390625 0.46875,-0.8765 0.46875,-1.408625 z m -10.69125,2.292375 -6.30875,8.36675 c -0.38,0.50775 -0.98375,0.8345 -1.66875,0.8345 l -2.71,0 c -0.335,0 -0.60625,-0.2735 -0.60625,-0.6075 0,-0.1415 0.0463,-0.2685 0.12,-0.366125 l 6.30625,-8.369125 c 0.385,-0.503 0.99125,-0.835 1.6725,-0.835 l 2.71,0 c 0.33625,0 0.6075,0.273375 0.6075,0.607875 0,0.13425 -0.0463,0.26375 -0.1225,0.368625"></path>
+               <path class="s1" d="m 91.905189,33.304989 c 1.88475,-0.424875 3.525375,-1.516125 4.6485,-3.010375 l 1.81875,-2.4145 c 0.2955,-0.390625 0.47125,-0.8765 0.47125,-1.408625 0,-1.294 -1.047375,-2.34375 -2.341375,-2.34375 l -19.396875,0 -13.1875,17.501875 20.06975,0 c 2.63675,0 4.975625,-1.262125 6.44775,-3.21525 l 1.860375,-2.47025 c 0.23925,-0.310125 0.3735,-0.705625 0.3735,-1.1255 0,-0.622625 -0.30275,-1.1695 -0.764125,-1.513625 z m -8.879375,2.25825 -1.184125,1.569875 c -0.380875,0.50525 -0.983875,0.832 -1.669875,0.832 l -3.92575,0 2.5415,-3.376 3.754875,0 c 0.3345,0 0.607875,0.271 0.607875,0.607875 0,0.13925 -0.04637,0.266125 -0.1245,0.36625 z m 5.129375,-6.799375 -1.00825,1.3355 c -0.383375,0.5005 -0.986375,0.827625 -1.672375,0.827625 l -3.92825,-0.0024 2.368125,-3.13725 3.7525,0 c 0.3345,0 0.607875,0.273375 0.607875,0.607875 0,0.13425 -0.04387,0.26375 -0.119625,0.368625"></path>
+            </g>
+         </g>
+      </svg>
+      <header>
+         <h1>Fault Isolation Manual</h1>
+         <h3><span title="Customized For">OMR</span><span class="separator"> - </span><span title="Document Number">Rev 90</span><span class="separator"> - </span><time title="Issue Date" datetime="2026-06-15T07:00:00Z">15 Jun 2026</time><span class="separator"> - </span><span title="Document Number">D633A103-OMR</span></h3>
+         <h2>737-700/800/900</h2>
+         <table>
+            <tbody></tbody>
+         </table>
+         <details open>
+            <summary>Export Control</summary>
+            <div class="exportControl">
+               <div class="exportRegistrationStatement EARN" id="EAR1">
+                  <p>EXPORT CONTROLLED - THIS TECHNOLOGY OR SOFTWARE IS SUBJECT TO THE U.S. EXPORT ADMINISTRATION
+                     REGULATIONS (EAR), (15 C.F.R. PARTS 730-774). NO AUTHORIZATION FROM THE U.S. DEPARTMENT
+                     OF COMMERCE IS REQUIRED FOR EXPORT, RE-EXPORT, IN-COUNTRY TRANSFER, OR ACCESS EXCEPT
+                     TO COUNTRY GROUP E:1 OR E:2 COUNTRIES/PERSONS PER SUPP.1 TO PART 740 OF THE EAR.<span class="codeList">ECCN:
+                        					9E991</span></p>
+               </div>
+            </div>
+         </details>
+         <details open>
+            <summary>Applicable To</summary>
+            <table>
+               <tr>
+                  <th>Airplanes (Variable Effectivity)</th>
+                  <td>YC171-YC171; YB551-YB551; YJ956-YJ956; YJ904-YJ904; YJ910-YJ910; YF112-YF112; YF113-YF113; YF114-YF114; YH751-YH751; YT177-YT177; YT178-YT178; YT180-YT180; YH752-YH752; YT181-YT181; YH753-YH753; YH754-YH754; YH755-YH755; YT182-YT182; YT183-YT183; YT184-YT184; YT185-YT185; YW916-YW916; YW917-YW917; YW918-YW918</td>
+               </tr>
+            </table>
+         </details>
+      </header>
+      <main>
+         <h2>Table of Contents</h2>
+         <nav><a href="file:///C:/PDF/TBC/FIM/D633A103-OMR">Supplemental Material</a><ul id="toc">
+               <li class="tocHead">FAULT ISOLATION MANUAL
+                  <ul>
+                     <li><a href="FM___090.PDF">FRONT MATTER</a></li>
+                     <li><a href="05___090.PDF">CHAPTER 05 - TIME LIMITS/MAINTENANCE CHECKS</a></li>
+                     <li><a href="21___090.PDF">CHAPTER 21 - AIR CONDITIONING</a></li>
+                     <li><a href="22___090.PDF">CHAPTER 22 - AUTOFLIGHT</a></li>
+                     <li><a href="23___090.PDF">CHAPTER 23 - COMMUNICATIONS</a></li>
+                     <li><a href="24___090.PDF">CHAPTER 24 - ELECTRICAL POWER</a></li>
+                     <li><a href="25___090.PDF">CHAPTER 25 - EQUIPMENT/FURNISHINGS</a></li>
+                     <li><a href="26___090.PDF">CHAPTER 26 - FIRE PROTECTION</a></li>
+                     <li><a href="27___090.PDF">CHAPTER 27 - FLIGHT CONTROLS</a></li>
+                     <li><a href="28___090.PDF">CHAPTER 28 - FUEL</a></li>
+                     <li><a href="29___090.PDF">CHAPTER 29 - HYDRAULIC POWER</a></li>
+                     <li><a href="30___090.PDF">CHAPTER 30 - ICE AND RAIN PROTECTION</a></li>
+                     <li><a href="31___090.PDF">CHAPTER 31 - INDICATING/RECORDING SYSTEMS</a></li>
+                     <li><a href="32___090.PDF">CHAPTER 32 - LANDING GEAR</a></li>
+                     <li><a href="33___090.PDF">CHAPTER 33 - LIGHTS</a></li>
+                     <li><a href="34___090.PDF">CHAPTER 34 - NAVIGATION</a></li>
+                     <li><a href="35___090.PDF">CHAPTER 35 - OXYGEN</a></li>
+                     <li><a href="36___090.PDF">CHAPTER 36 - PNEUMATIC</a></li>
+                     <li><a href="38___090.PDF">CHAPTER 38 - WATER/WASTE</a></li>
+                     <li><a href="46___090.PDF">CHAPTER 46 - INFORMATION SYSTEMS</a></li>
+                     <li><a href="47___090.PDF">CHAPTER 47 - INERT GAS SYSTEM</a></li>
+                     <li><a href="49___090.PDF">CHAPTER 49 - AUXILIARY POWER UNIT</a></li>
+                     <li><a href="52___090.PDF">CHAPTER 52 - DOORS</a></li>
+                     <li><a href="56___090.PDF">CHAPTER 56 - WINDOWS</a></li>
+                     <li class="tocHead">CFM56 ENGINES (CFM56-7)
+                        <ul>
+                           <li><a href="71_F__090.PDF">CHAPTER 71 - POWER PLANT</a></li>
+                           <li><a href="73_F__090.PDF">CHAPTER 73 - ENGINE FUEL AND CONTROL</a></li>
+                           <li><a href="74_F__090.PDF">CHAPTER 74 - IGNITION</a></li>
+                           <li><a href="75_F__090.PDF">CHAPTER 75 - AIR</a></li>
+                           <li><a href="76_F__090.PDF">CHAPTER 76 - ENGINE CONTROLS</a></li>
+                           <li><a href="77_F__090.PDF">CHAPTER 77 - ENGINE INDICATION</a></li>
+                           <li><a href="78_F__090.PDF">CHAPTER 78 - EXHAUST</a></li>
+                           <li><a href="79_F__090.PDF">CHAPTER 79 - OIL</a></li>
+                           <li><a href="80_F__090.PDF">CHAPTER 80 - STARTING</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </main>
+      <footer>
+         <p>BOEING PROPRIETARY</p>
+         <p>Last Modified: 
+            <time datetime="2026-05-28T12:10:20Z">2026-05-28T12:10:20Z</time>
+         </p>
+      </footer>
+   </body>
+</html>
